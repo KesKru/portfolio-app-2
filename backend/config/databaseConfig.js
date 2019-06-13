@@ -15,8 +15,4 @@ sequelize
     console.log(err);
   });
 
-// sequelize.sync({ force: true }).then(() => {
-//   console.log(`Database & tables created!`);
-// });
-
 module.exports = sequelize;
