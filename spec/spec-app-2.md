@@ -1,6 +1,6 @@
-# Portfolio-app-spec
+# App-2-spec
 
-A short overview of Functional, Design and Technical specifications for this app. This is a full stack LinkedIn style application, with simplified functionality,- to demonstrate working knowledge of React-Redux-MaterialUI + Node-Express-PostgreSQL technology stack.
+A short overview of Functional, Design and Technical specifications for this app.
 
 ## Functional spec:
 

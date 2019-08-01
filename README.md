@@ -1,17 +1,1 @@
-# portfolio-app-2
-
-This will be LinkedIn style app.
-
-## Spec
-
-### Functional spec
-
-...
-
-### Design spec
-
-...
-
-### Technical spec
-
-...
+This is a full-stack LinkedIn style Single page application (SPA), with simplified functionality,- to demonstrate working knowledge of React-Redux-MaterialUI front-end + Node-Express-PostgreSQL back-end technology stack.
