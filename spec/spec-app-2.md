@@ -1,10 +1,21 @@
 # App-2-spec
 
-A short overview of Functional, Design and Technical specifications for this app.
+Context:
+
+This is a full-stack Single page application (SPA) created to demonstrate a working knowledge of React-Redux-MaterialUI front-end + Node-Express-PostgreSQL back-end technology stack.
+It will be a small social/professional network app aimed at developers. The app will have user registration/login functionality, the ability to search profiles of others based on selected criteria. User will be able to post/comment on theirs and other people homepages and also have access to trends page where they will see various data visualizations based on user profiles trends.
 
 ## Functional spec:
 
-TBD
+Functionality:
+
+- User register/login/update functionality.
+- Personalized home pages for logged in users.
+- Protected private pages functionality.
+- Post/Comment functionality.
+- Profile search functionality.
+- Profiles statistics visualization.
+- Responsive/Animated front-end design.
 
 ## Design spec:
 
