@@ -17,19 +17,32 @@ Functionality:
 - Profiles statistics visualization.
 - Responsive/Animated front-end design.
 
+Site pages and their functions:
+
+```sh
+Home                 # Landing page.
+|
+|- Register/login    # Register/login functionality
+|
+|- User info*        # User account info/updates
+|
+|- User home*         # User home page with posts/comments
+|
+|- Profile search    # Search results
+|
+|- Profile           # User public profile page
+|
+|- Trends            # Profiles statistics visualization
+|
+|- About/Contacts    # Information about the company/contacts
+|
+
+* - These pages are private and require user login.
+```
+
 ## Design spec:
 
 TDB
-
-<!-- Color scheme and font:
-
-Pages and their design:
-
-- Landing
-- Login/Register
-- ...
-
-![alt text](./img/landing.png 'Logo Title Text 1') -->
 
 ## Technical spec:
 
