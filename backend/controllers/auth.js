@@ -1,5 +1,3 @@
-const passport = require('passport');
-
 module.exports = {
   // User | 'users/login' | Login user, create session.
   login: (req, res) => {

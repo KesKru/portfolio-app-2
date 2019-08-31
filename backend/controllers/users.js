@@ -1,17 +1,11 @@
-//-----------------------Modules-----------------------//
-const path = require('path');
-//-----------------------Models-----------------------//
-const md = require('../models/index');
+const User = require('../models/index').User;
 const errors = {};
 
 //-----------------------Controlers-----------------------//
+
 module.exports = {
   createUser: (req, res) => {
-    newUser = md.User.build({
-      name: req.body.name,
-      email: req.body.email,
-      password: req.body.password
-    });
+    newUser = User.build(req.body.user);
     newUser.hashPassword().then((hash) => {
       newUser.password = hash;
       newUser

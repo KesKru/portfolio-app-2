@@ -6,13 +6,16 @@ const sequelize = new Sequelize('portfolio-app-2', 'postgres', 'postgres', {
   logging: false
 });
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log('PostgreSQL connected...');
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-module.exports = sequelize;
+module.exports = (noLog) => {
+  if (noLog) {
+    return sequelize;
+  } else {
+    sequelize
+      .authenticate()
+      .then(() => console.log('PostgreSQL connected...'))
+      .catch((err) => {
+        console.log(err);
+      });
+    return sequelize;
+  }
+};

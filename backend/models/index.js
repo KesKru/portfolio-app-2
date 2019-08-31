@@ -1,10 +1,9 @@
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 const basename = path.basename(__filename);
-const sequelize = require('../config/databaseConfig');
-const md = {};
+const sequelize = require('../config/databaseConfig')('noLog');
+
+const models = {};
 
 fs.readdirSync(__dirname)
   .filter((file) => {
@@ -15,17 +14,13 @@ fs.readdirSync(__dirname)
   .forEach((file) => {
     // const model = require(path.join(__dirname, file));
     const model = sequelize.import(path.join(__dirname, file));
-    md[model.name] = model;
+    models[model.name] = model;
   });
 
-Object.keys(md).forEach((modelName) => {
-  if (md[modelName].associate) {
-    md[modelName].associate(md);
+Object.keys(models).forEach((modelName) => {
+  if (models[modelName].associate) {
+    models[modelName].associate(models);
   }
 });
 
-sequelize.sync({ force: true }).then(() => {
-  console.log(`Database & tables created!`);
-});
-
-module.exports = md;
+module.exports = models;
